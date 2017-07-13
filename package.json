@@ -1,26 +1,12 @@
 {
-  "name": "react-render-async",
-  "version": "1.0.0",
-  "description": "Return a promise in the render function which resolves to a component. That component can also return a promise that resolves to a component and so on.",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "install": "cd example && npm install react-render-async --save",
+    "start": "cd example && npm start",
+    "reboot": "babel src --out-file lib/index.js && cd lib && npm version patch && npm publish && cd ../example && npm install react-render-async --save && npm start"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/timurtu/react-render-async.git"
-  },
-  "keywords": [
-    "react",
-    "render",
-    "async",
-    "component",
-    "hoc"
-  ],
-  "author": "Timur Uzel <timurt.uzel@gmail.com> (https://github.com/timurtu)",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/timurtu/react-render-async/issues"
-  },
-  "homepage": "https://github.com/timurtu/react-render-async#readme"
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1"
+  }
 }
