@@ -22,7 +22,7 @@ asyncrify(Component);
 import React, { Component } from 'react';
 import asyncrify from 'react-render-async';
 
-class Header extends React.Component {
+class Header extends Component {
   render() {
     return new Promise(resolve => {
       setTimeout(() => {

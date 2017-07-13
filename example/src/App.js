@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import asyncrify from 'react-render-async';
 
-class Header extends React.Component {
+class Header extends Component {
   render() {
     return new Promise(resolve => {
       setTimeout(() => {
